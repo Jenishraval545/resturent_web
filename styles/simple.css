@@ -1,0 +1,49 @@
+/* simple.css */
+/* Reset some default margins */
+body, h1, p, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base font and background */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+}
+
+/* Header basics */
+header {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    margin-top: 2rem;
+}

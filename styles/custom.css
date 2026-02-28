@@ -1,0 +1,73 @@
+/* custom.css */
+
+/* Background image overlay effect */
+.header-with-background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-with-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.header-with-background h1,
+.header-with-background p,
+.header-with-background nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Dynamic hover effect for nav links */
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;   /* Oval shape */
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9900;
+    color: white;
+    transform: scale(1.05);
+
+}
+nav a.active {
+    background-color: #333;  /* Dark background for active link */
+    color: #fff;             /* White text */
+    transform: scale(1.05);  /* Slight emphasis */
+}
+/* Image styling */
+figure img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Figcaption styling */
+figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* Footer animation */
+footer p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
